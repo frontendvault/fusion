@@ -1,20 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 #login-section {
+  font-family: 'Open Sans', sans-serif;
+
   .logo-login {
     width: 180px;
   }
+
   margin-top: 100px;
+
   .btn {
-    background: $blue;
+    background: $defult;
     font-size: 14px;
     height: 50px;
   }
+
   .steps-section {
     h4 {
       font-size: 25px;
       font-weight: normal;
       font-family: Arial, Helvetica, sans-serif;
     }
+
     position: relative;
+
     .bg-line {
       position: absolute;
       height: 3px;
@@ -24,6 +33,7 @@
       top: 15px;
       z-index: -1;
     }
+
     .step {
       width: 30px;
       height: 30px;
@@ -31,12 +41,15 @@
       background: #f8f9fa;
       border: 3px solid $light-gray;
     }
+
     .step-active {
-      border-color: $blue;
+      border-color: $defult;
     }
+
     .step-fill {
-      background-color: $blue;
-      border-color: $blue;
+      background-color: $defult;
+      border-color: $defult;
+
       &::after {
         content: "";
         display: block;
@@ -49,13 +62,16 @@
       }
     }
   }
+
   form {
     h6 {
       font-size: 14px;
     }
+
     small {
       font-size: 13px;
     }
+
     .form-control {
       box-shadow: inset 0 0 10px $light-gray;
       font-size: 14px;
@@ -69,23 +85,114 @@
     box-shadow: none !important;
     color: $medium-gray;
     font-weight: 100;
+
     &::placeholder {
       color: $medium-gray;
       font-weight: 100;
     }
   }
+
   label {
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 300;
     color: $medium-gray;
   }
+
   h6 {
     font-weight: bold;
   }
+
   p,
   li {
     font-size: 14px;
     font-weight: 100;
     color: $medium-gray;
   }
+
+  .feedback-radios { 
+    .col {
+      height: 70px;
+      position: relative;
+      width: auto;
+      display: flex;
+      justify-content: center;
+
+      .custom-label {
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+
+      .custom-radio {
+        position: absolute;
+        bottom: 0;
+        left: 35%;
+
+        input:checked~.custom-control-label::after {
+          background-image: none;
+          border: 5px solid $white;
+          width: 1.45rem;
+          height: 1.45rem;
+          margin: auto;
+          position: absolute;
+          left: -22px;
+          top: 5.8px;
+          display: block;
+          border-radius: 50%;
+        }
+
+        .custom-control-label {
+          span {
+            position: absolute;
+            top: -50px;
+          }
+
+          &::before,
+          &::after {
+            width: 1.7rem;
+            height: 1.68rem;
+            border-radius: 50%;
+            display: block;
+          }
+        }
+      }
+
+      .radio-dislike {
+        .custom-control-input:checked~.custom-control-label::before {
+          background-color: $light-blue;
+          border-color: $light-blue;
+        }
+      }
+
+      .radio-unsure {
+        .custom-control-input:checked~.custom-control-label::before {
+          background-color: $yellow;
+          border-color: $yellow;
+        }
+      }
+
+      .radio-like {
+        .custom-control-input:checked~.custom-control-label::before {
+          background-color: $parrot;
+          border-color: $parrot;
+        }
+      }
+
+      .radio-strongly-like {
+        .custom-control-input:checked~.custom-control-label::before {
+          background-color: $green;
+          border-color: $green;
+        }
+      }
+    }
+
+
+  }
+
+
+
+
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 html {
   overflow-x: hidden; }
 
@@ -168,14 +169,19 @@ button:focus {
   -o-transition: all 0.3s ease-in-out 0s; }
   .social-icon a:hover {
     color: #fff !important; }
+
 .social-icon .facebook:hover {
   background: #3b5999; }
+
 .social-icon .twitter:hover {
   background: #4A9CEC; }
+
 .social-icon .instagram:hover {
   background: #D6274D; }
+
 .social-icon .linkedin:hover {
   background: #1260A2; }
+
 .social-icon .google:hover {
   background: #CE332A; }
 
@@ -251,6 +257,7 @@ a.back-to-top {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
+
 .section-padding {
   padding: 60px 0; }
 
@@ -381,8 +388,10 @@ hr {
   .about-area .about-wrapper > div {
     vertical-align: middle;
     display: table-cell; }
+
 .about-area img {
   border-radius: 4px; }
+
 .about-area .content {
   margin-top: 15px; }
   .about-area .content p {
@@ -967,11 +976,12 @@ textarea {
   font-size: 16px; }
 
 #login-section {
+  font-family: 'Open Sans', sans-serif;
   margin-top: 100px; }
   #login-section .logo-login {
     width: 180px; }
   #login-section .btn {
-    background: #5064d5;
+    background: #0099ff;
     font-size: 14px;
     height: 50px; }
   #login-section .steps-section {
@@ -995,10 +1005,10 @@ textarea {
       background: #f8f9fa;
       border: 3px solid #e5e5e5; }
     #login-section .steps-section .step-active {
-      border-color: #5064d5; }
+      border-color: #0099ff; }
     #login-section .steps-section .step-fill {
-      background-color: #5064d5;
-      border-color: #5064d5; }
+      background-color: #0099ff;
+      border-color: #0099ff; }
       #login-section .steps-section .step-fill::after {
         content: "";
         display: block;
@@ -1024,17 +1034,68 @@ textarea {
   .login-steps .form-control::placeholder {
     color: #999;
     font-weight: 100; }
+
 .login-steps label {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   color: #999; }
+
 .login-steps h6 {
   font-weight: bold; }
+
 .login-steps p,
 .login-steps li {
   font-size: 14px;
   font-weight: 100;
   color: #999; }
+
+.login-steps .feedback-radios .col {
+  height: 70px;
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: center; }
+  .login-steps .feedback-radios .col .custom-label {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    font-weight: 500; }
+  .login-steps .feedback-radios .col .custom-radio {
+    position: absolute;
+    bottom: 0;
+    left: 35%; }
+    .login-steps .feedback-radios .col .custom-radio input:checked ~ .custom-control-label::after {
+      background-image: none;
+      border: 5px solid #fff;
+      width: 1.45rem;
+      height: 1.45rem;
+      margin: auto;
+      position: absolute;
+      left: -22px;
+      top: 5.8px;
+      display: block;
+      border-radius: 50%; }
+    .login-steps .feedback-radios .col .custom-radio .custom-control-label span {
+      position: absolute;
+      top: -50px; }
+    .login-steps .feedback-radios .col .custom-radio .custom-control-label::before, .login-steps .feedback-radios .col .custom-radio .custom-control-label::after {
+      width: 1.7rem;
+      height: 1.68rem;
+      border-radius: 50%;
+      display: block; }
+  .login-steps .feedback-radios .col .radio-dislike .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #3EDAF7;
+    border-color: #3EDAF7; }
+  .login-steps .feedback-radios .col .radio-unsure .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #E6ED37;
+    border-color: #E6ED37; }
+  .login-steps .feedback-radios .col .radio-like .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #83F521;
+    border-color: #83F521; }
+  .login-steps .feedback-radios .col .radio-strongly-like .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #11DB57;
+    border-color: #11DB57; }
 
 /* Footer Area Start */
 .footer-area {
@@ -1096,6 +1157,7 @@ textarea {
   border-top: 1px solid #d5d4e9;
   padding: 15px 0;
   margin: 45px 0 0px; }
+
 #copyright p {
   line-height: 42px;
   color: #333;
@@ -1121,15 +1183,18 @@ textarea {
   -o-transition: all 0.3s ease-in-out 0s; }
   .social-icon a:hover {
     color: #fff !important; }
+
 .social-icon .facebook:hover {
   background: #3b5999; }
+
 .social-icon .twitter:hover {
   background: #4A9CEC; }
+
 .social-icon .instagram:hover {
   background: #D6274D; }
+
 .social-icon .linkedin:hover {
   background: #1260A2; }
+
 .social-icon .google:hover {
   background: #CE332A; }
-
-/*# sourceMappingURL=main.css.map */

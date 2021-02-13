@@ -1,76 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <title>Fusion - Bootstrap 4 Template</title>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
+  <title>Fusion - Bootstrap 4 Template</title>
 
-    <!-- Icon -->
-    <link rel="stylesheet" href="assets/fonts/line-icons.css" />
+  <!-- Bootstrap CSS -->
 
-    <!-- Animate -->
-    <link rel="stylesheet" href="assets/css/animate.css" />
-    <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="assets/css/bootstrap.min.css"
-    />
-    <!-- Responsive Style -->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-  </head>
-  <body>
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav
-        class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar shadow-sm"
-      >
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="index.html" class="navbar-brand"
-            ><img src="assets/img/cantoo_new.png" alt=""
-          /></a>
-        </div>
-      </nav>
-      <!-- Navbar End -->
-    </header>
-    <!-- Header Area wrapper End -->
-    <!-- Login Section Starts -->
-    <div class="container py-5 login-steps" id="login-section">
-        <div class="row">
-            <div class="col"><a href="#"> < Back </a></div>
-          </div>   <div class="row">
-        <div class="col px-5 col-md-8 offset-md-2 steps-section">
-          <div class="row text-center">
-            <div class="col step-count mb-5">
-              <h4><strong>Step 3</strong> of 3</h4>
+  <!-- Icon -->
+  <link rel="stylesheet" href="assets/fonts/line-icons.css" />
+
+  <!-- Animate -->
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Responsive Style -->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar shadow-sm">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a href="index.html" class="navbar-brand"><img src="assets/img/cantoo_new.png" alt="" /></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+  </header>
+  <!-- Header Area wrapper End -->
+  <!-- Login Section Starts -->
+  <div class="container py-5 login-steps" id="login-section">
+    <div class="row">
+      <div class="col"><a href="#">
+          < Back </a> </div> </div> <div class="row">
+            <div class="col px-5 col-md-8 offset-md-2 steps-section">
+              <div class="row text-center">
+                <div class="col step-count mb-5">
+                  <h4><strong>Step 3</strong> of 3</h4>
+                </div>
+              </div>
+
+              <div class="row justify-content-between position-relative">
+                <div class="bg-line progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" style="width: 100%" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <div class="step step-fill"></div>
+                <div class="step step-fill"></div>
+                <div class="step step-active"></div>
+              </div>
             </div>
-          </div>
-
-          <div class="row justify-content-between position-relative">
-            <div class="bg-line progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="100"
-                style="width: 100%"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <div class="step step-fill"></div>
-            <div class="step step-fill"></div>
-            <div class="step step-active"></div>
-          </div>
-        </div>
       </div>
       <div class="row mt-5">
         <div class="px-5 col-md-8 offset-md-2 text-center py-5">
@@ -82,6 +68,49 @@
             Read each question carefully and decide how would you feel about
             doing each type of work:
           </p>
+
+          <div class="row feedback-radios mt-3">
+
+            <div class="col-md-8 offset-md-2">
+              <div class="row">
+                <div class="col">
+                  <label for="stronglyLike" class="custom-label"> Strongly <br> Dislike </label>
+                  <div class="custom-control custom-radio custom-control-inline radio-primary">
+                    <input type="radio" id="stronglyLike" name="customRadioInline" class="custom-control-input">
+                    <label class="custom-control-label" for="stronglyLike"> </label>
+                  </div>
+                </div>
+                <div class="col border-left">
+                  <label for="dislike" class="custom-label"> Dislike </label>
+                  <div class="custom-control custom-radio custom-control-inline radio-dislike">
+                    <input type="radio" id="dislike" name="customRadioInline" class="custom-control-input">
+                    <label class="custom-control-label" for="dislike"> </label>
+                  </div>
+                </div>
+                <div class="col border-left">
+                  <label for="unsure" class="custom-label"> Unsure </label>
+                  <div class="custom-control custom-radio custom-control-inline radio-unsure">
+                    <input type="radio" id="unsure" name="customRadioInline" class="custom-control-input">
+                    <label class="custom-control-label" for="unsure"> </label>
+                  </div>
+                </div>
+                <div class="col border-left border-right">
+                  <label for="like" class="custom-label"> Like </label>
+                  <div class="custom-control custom-radio custom-control-inline radio-like">
+                    <input type="radio" id="like" name="customRadioInline" class="custom-control-input">
+                    <label class="custom-control-label" for="like"> </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <label for="customRadioInline1" class="custom-label"> Stronly <br> Like </label>
+                  <div class="custom-control custom-radio custom-control-inline radio-strongly-like">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1"> </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -118,37 +147,36 @@
             </li>
           </ul>
           <div class="col-md-12 text-center">
-            <button
-              class="btn badge-pill btn-primary px-5 text-uppercase font-weight-bold mt-5"
-            >
+            <button class="btn badge-pill btn-primary px-5 text-uppercase font-weight-bold mt-5">
               Next
             </button>
           </div>
         </div>
       </div>
-     
-      </div>
+
     </div>
+  </div>
 
-    <!-- Login Section Ends -->
+  <!-- Login Section Ends -->
 
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="loader" id="loader-1"></div>
-    </div>
-    <!-- End Preloader -->
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader" id="loader-1"></div>
+  </div>
+  <!-- End Preloader -->
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.min.js"></script>
-  </body>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery-min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/scrolling-nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form-validator.min.js"></script>
+  <script src="assets/js/contact-form-script.min.js"></script>
+</body>
+
 </html>
