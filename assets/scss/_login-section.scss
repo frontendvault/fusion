@@ -109,7 +109,7 @@
     color: $medium-gray;
   }
 
-  .feedback-radios { 
+  .feedback-radios {
     .col {
       height: 70px;
       position: relative;
@@ -189,10 +189,41 @@
       }
     }
 
+    .carousel {
+      .col {
+        height: auto;
+        align-items: center;
 
+        .custom-radio {
+          position: static;
+          bottom: auto;
+          margin-right: 0;
+        }
+
+        .custom-label {
+          position: static;
+        }
+      }
+
+      .single-label {
+        justify-content: flex-start;
+      }
+    }
   }
 
+  .carousel-indicators {
+    li {
+      height: 20px;
+      width: 20px;
+      border-top: 0;
+      border-bottom: 0;
+      border-radius: 50%;
+      border: 1px solid $gray;
+    }
 
-
+    .active {
+      background: $gray;
+    }
+  }
 
 }

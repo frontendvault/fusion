@@ -1097,6 +1097,30 @@ textarea {
     background-color: #11DB57;
     border-color: #11DB57; }
 
+.login-steps .feedback-radios .carousel .col {
+  height: auto;
+  align-items: center; }
+  .login-steps .feedback-radios .carousel .col .custom-radio {
+    position: static;
+    bottom: auto;
+    margin-right: 0; }
+  .login-steps .feedback-radios .carousel .col .custom-label {
+    position: static; }
+
+.login-steps .feedback-radios .carousel .single-label {
+  justify-content: flex-start; }
+
+.login-steps .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 50%;
+  border: 1px solid #ccc; }
+
+.login-steps .carousel-indicators .active {
+  background: #ccc; }
+
 /* Footer Area Start */
 .footer-area {
   position: relative;
