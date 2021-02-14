@@ -3,6 +3,10 @@
 #login-section {
   font-family: 'Open Sans', sans-serif;
 
+  h2 {
+    font-family: 'Open Sans', sans-serif; margin-top: 60px; font-weight: 600; margin-bottom: 15px;
+  }
+
   .logo-login {
     width: 180px;
   }
@@ -110,12 +114,17 @@
   }
 
   .feedback-radios {
-    .fixed-labels-top { margin-top: 60px;
+    .fixed-labels-top {
+      margin-top: 60px;
+
       .col {
         height: 50px;
         display: flex;
         align-items: flex-end;
-        .custom-label{ position: static;}
+
+        .custom-label {
+          position: static;
+        }
       }
     }
 
