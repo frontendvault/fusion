@@ -1051,6 +1051,15 @@ textarea {
   font-weight: 100;
   color: #999; }
 
+.login-steps .feedback-radios .fixed-labels-top {
+  margin-top: 60px; }
+  .login-steps .feedback-radios .fixed-labels-top .col {
+    height: 50px;
+    display: flex;
+    align-items: flex-end; }
+    .login-steps .feedback-radios .fixed-labels-top .col .custom-label {
+      position: static; }
+
 .login-steps .feedback-radios .col {
   height: 70px;
   position: relative;
@@ -1100,7 +1109,7 @@ textarea {
     border-color: #11DB57; }
 
 .login-steps .feedback-radios .carousel {
-  height: 600px !important;
+  height: 400px !important;
   padding-bottom: 80px;
   margin-bottom: 40px; }
   .login-steps .feedback-radios .carousel .col {
@@ -1109,12 +1118,12 @@ textarea {
     .login-steps .feedback-radios .carousel .col .custom-radio {
       position: static;
       bottom: auto;
-      margin-right: 0; }
+      margin-right: 0;
+      margin-top: -7px; }
     .login-steps .feedback-radios .carousel .col .custom-label {
       position: static; }
   .login-steps .feedback-radios .carousel .single-label {
-    justify-content: flex-start;
-    margin-top: 20px; }
+    justify-content: flex-start; }
   .login-steps .feedback-radios .carousel .carousel-control-next,
   .login-steps .feedback-radios .carousel .carousel-control-prev {
     top: auto;

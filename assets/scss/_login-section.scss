@@ -110,6 +110,15 @@
   }
 
   .feedback-radios {
+    .fixed-labels-top { margin-top: 60px;
+      .col {
+        height: 50px;
+        display: flex;
+        align-items: flex-end;
+        .custom-label{ position: static;}
+      }
+    }
+
     .col {
       height: 70px;
       position: relative;
@@ -190,7 +199,7 @@
     }
 
     .carousel {
-      height: 600px !important;
+      height: 400px !important;
       padding-bottom: 80px;
       margin-bottom: 40px;
 
@@ -202,6 +211,7 @@
           position: static;
           bottom: auto;
           margin-right: 0;
+          margin-top: -7px;
         }
 
         .custom-label {
@@ -211,7 +221,7 @@
 
       .single-label {
         justify-content: flex-start;
-        margin-top: 20px;
+
       }
 
       .carousel-control-next,
