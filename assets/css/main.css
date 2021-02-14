@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
 body {
   background: #fff;
@@ -16,7 +17,8 @@ body {
   line-height: 25px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
 h1, h2, h3, h4 {
   font-size: 38px;
@@ -1097,29 +1099,40 @@ textarea {
     background-color: #11DB57;
     border-color: #11DB57; }
 
-.login-steps .feedback-radios .carousel .col {
-  height: auto;
-  align-items: center; }
-  .login-steps .feedback-radios .carousel .col .custom-radio {
-    position: static;
-    bottom: auto;
-    margin-right: 0; }
-  .login-steps .feedback-radios .carousel .col .custom-label {
-    position: static; }
-
-.login-steps .feedback-radios .carousel .single-label {
-  justify-content: flex-start; }
-
-.login-steps .carousel-indicators li {
-  height: 20px;
-  width: 20px;
-  border-top: 0;
-  border-bottom: 0;
-  border-radius: 50%;
-  border: 1px solid #ccc; }
-
-.login-steps .carousel-indicators .active {
-  background: #ccc; }
+.login-steps .feedback-radios .carousel {
+  height: 600px !important;
+  padding-bottom: 80px;
+  margin-bottom: 40px; }
+  .login-steps .feedback-radios .carousel .col {
+    height: auto;
+    align-items: center; }
+    .login-steps .feedback-radios .carousel .col .custom-radio {
+      position: static;
+      bottom: auto;
+      margin-right: 0; }
+    .login-steps .feedback-radios .carousel .col .custom-label {
+      position: static; }
+  .login-steps .feedback-radios .carousel .single-label {
+    justify-content: flex-start;
+    margin-top: 20px; }
+  .login-steps .feedback-radios .carousel .carousel-control-next,
+  .login-steps .feedback-radios .carousel .carousel-control-prev {
+    top: auto;
+    opacity: 1;
+    bottom: 40px;
+    width: 70px;
+    padding: 10px; }
+  .login-steps .feedback-radios .carousel .carousel-indicators {
+    bottom: 40px; }
+    .login-steps .feedback-radios .carousel .carousel-indicators li {
+      height: 20px;
+      width: 20px;
+      border-top: 0;
+      border-bottom: 0;
+      border-radius: 50%;
+      border: 1px solid #ccc; }
+    .login-steps .feedback-radios .carousel .carousel-indicators .active {
+      background: #ccc; }
 
 /* Footer Area Start */
 .footer-area {
