@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 html {
-  overflow-x: hidden;
   height: 100%; }
 
 body {
   background: #fff;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -20,11 +19,14 @@ body {
   overflow-x: hidden;
   height: 100%; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-size: 38px;
   color: #222222;
   font-weight: 700;
-  font-family: 'Arvo', serif; }
+  font-family: "Arvo", serif; }
 
 a {
   -webkit-transition: all 0.2s linear;
@@ -38,15 +40,17 @@ a {
 
 p {
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0px;
   font-size: 14px; }
 
-ul, ol {
+ul,
+ol {
   list-style: outside none none;
   margin: 0;
   padding: 0; }
-  ul li, ol li {
+  ul li,
+  ol li {
     list-style: none; }
 
 a:not([href]):not([tabindex]) {
@@ -116,9 +120,9 @@ a:not([href]):not([tabindex]) {
     background: transparent;
     border: 1px dotted #0099ff;
     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-    transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -webkit-transition: all .2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out; }
 
 .btn-border {
   color: #0099ff;
@@ -151,7 +155,8 @@ a:not([href]):not([tabindex]) {
 button:focus {
   outline: none !important; }
 
-.icon-close, .icon-check {
+.icon-close,
+.icon-check {
   color: #0099ff; }
 
 .social-icon a {
@@ -174,13 +179,13 @@ button:focus {
 .social-icon .facebook:hover {
   background: #3b5999; }
 .social-icon .twitter:hover {
-  background: #4A9CEC; }
+  background: #4a9cec; }
 .social-icon .instagram:hover {
-  background: #D6274D; }
+  background: #d6274d; }
 .social-icon .linkedin:hover {
-  background: #1260A2; }
+  background: #1260a2; }
 .social-icon .google:hover {
-  background: #CE332A; }
+  background: #ce332a; }
 
 /* ScrollToTop */
 a.back-to-top {
@@ -225,7 +230,8 @@ a.back-to-top {
   position: relative;
   margin: 0 auto; }
 
-#loader-1:before, #loader-1:after {
+#loader-1:before,
+#loader-1:after {
   content: "";
   position: absolute;
   top: -10px;
