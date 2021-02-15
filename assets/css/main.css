@@ -1143,6 +1143,45 @@ textarea {
     .login-steps .feedback-radios .carousel .carousel-indicators .active {
       background: #ccc; }
 
+.recommend-learning {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px; }
+  .recommend-learning h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold; }
+  .recommend-learning .dashboard-right-side {
+    margin-top: 130px; }
+  .recommend-learning .dashboard-left-side {
+    max-width: 100px;
+    height: 100vh; }
+    .recommend-learning .dashboard-left-side ul {
+      margin-top: 130px; }
+      .recommend-learning .dashboard-left-side ul a {
+        padding: 20px;
+        display: block;
+        position: relative; }
+        .recommend-learning .dashboard-left-side ul a .badge {
+          position: absolute;
+          right: 15px;
+          top: 15px; }
+        .recommend-learning .dashboard-left-side ul a .lni {
+          font-size: 30px;
+          color: #ccc; }
+  .recommend-learning .chain-management-master p {
+    color: #999; }
+    .recommend-learning .chain-management-master p span {
+      color: #0099ff;
+      font-weight: bold; }
+  .recommend-learning .chain-management-master .feedback .lni {
+    color: #fca64e;
+    font-size: 18px; }
+  .recommend-learning .additional-info h6 {
+    font-size: 15px;
+    font-weight: 600; }
+  .recommend-learning .additional-info p {
+    color: #999; }
+
 /* Footer Area Start */
 .footer-area {
   position: relative;

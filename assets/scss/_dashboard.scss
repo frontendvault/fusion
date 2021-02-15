@@ -1,0 +1,61 @@
+.recommend-learning {
+  font-family: "Open Sans", sans-serif;
+
+  font-size: 12px;
+  h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .dashboard-right-side {
+    margin-top: 130px;
+  }
+  .dashboard-left-side {
+    max-width: 100px;
+    height: 100vh;
+    ul {
+      margin-top: 130px;
+      a {
+        padding: 20px;
+        display: block;
+        position: relative;
+        .badge {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+        }
+        // img {
+        //   width: 25px;
+        // }
+        .lni {
+          font-size: 30px;
+          color: $gray;
+        }
+      }
+    }
+  }
+  .chain-management-master {
+    p {
+      color: $medium-gray;
+      span {
+        color: $defult;
+        font-weight: bold;
+      }
+    }
+    .feedback {
+      .lni {
+        color: $orange;
+        font-size: 18px;
+      }
+    }
+  }
+  .additional-info {
+    h6 {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    p {
+      color: $medium-gray;
+    }
+  }
+}
