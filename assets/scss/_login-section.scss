@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 
 #login-section {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   h2 {
-    font-family: 'Open Sans', sans-serif; margin-top: 60px; font-weight: 600; margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 60px;
+    font-weight: 600;
+    margin-bottom: 15px;
   }
 
   .logo-login {
@@ -17,8 +20,11 @@
     background: $defult;
     font-size: 14px;
     height: 50px;
+    border: 1px solid $defult;
   }
-
+  h5 {
+    color: $dark;
+  }
   .steps-section {
     h4 {
       font-size: 25px;
@@ -143,13 +149,12 @@
         font-weight: 500;
       }
 
-
       .custom-radio {
         position: absolute;
         bottom: 0;
         left: 35%;
 
-        input:checked~.custom-control-label::after {
+        input:checked ~ .custom-control-label::after {
           background-image: none;
           border: 5px solid $white;
           width: 1.45rem;
@@ -179,28 +184,28 @@
       }
 
       .radio-dislike {
-        .custom-control-input:checked~.custom-control-label::before {
+        .custom-control-input:checked ~ .custom-control-label::before {
           background-color: $light-blue;
           border-color: $light-blue;
         }
       }
 
       .radio-unsure {
-        .custom-control-input:checked~.custom-control-label::before {
+        .custom-control-input:checked ~ .custom-control-label::before {
           background-color: $yellow;
           border-color: $yellow;
         }
       }
 
       .radio-like {
-        .custom-control-input:checked~.custom-control-label::before {
+        .custom-control-input:checked ~ .custom-control-label::before {
           background-color: $parrot;
           border-color: $parrot;
         }
       }
 
       .radio-strongly-like {
-        .custom-control-input:checked~.custom-control-label::before {
+        .custom-control-input:checked ~ .custom-control-label::before {
           background-color: $green;
           border-color: $green;
         }
@@ -230,7 +235,6 @@
 
       .single-label {
         justify-content: flex-start;
-
       }
 
       .carousel-control-next,
@@ -257,12 +261,7 @@
         .active {
           background: $gray;
         }
-
-
       }
     }
   }
-
-
-
 }

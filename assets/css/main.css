@@ -171,19 +171,14 @@ button:focus {
   -o-transition: all 0.3s ease-in-out 0s; }
   .social-icon a:hover {
     color: #fff !important; }
-
 .social-icon .facebook:hover {
   background: #3b5999; }
-
 .social-icon .twitter:hover {
   background: #4A9CEC; }
-
 .social-icon .instagram:hover {
   background: #D6274D; }
-
 .social-icon .linkedin:hover {
   background: #1260A2; }
-
 .social-icon .google:hover {
   background: #CE332A; }
 
@@ -259,7 +254,6 @@ a.back-to-top {
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
-
 .section-padding {
   padding: 60px 0; }
 
@@ -390,10 +384,8 @@ hr {
   .about-area .about-wrapper > div {
     vertical-align: middle;
     display: table-cell; }
-
 .about-area img {
   border-radius: 4px; }
-
 .about-area .content {
   margin-top: 15px; }
   .about-area .content p {
@@ -978,10 +970,10 @@ textarea {
   font-size: 16px; }
 
 #login-section {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-top: 100px; }
   #login-section h2 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin-top: 60px;
     font-weight: 600;
     margin-bottom: 15px; }
@@ -990,7 +982,10 @@ textarea {
   #login-section .btn {
     background: #0099ff;
     font-size: 14px;
-    height: 50px; }
+    height: 50px;
+    border: 1px solid #0099ff; }
+  #login-section h5 {
+    color: #333; }
   #login-section .steps-section {
     position: relative; }
     #login-section .steps-section h4 {
@@ -1041,21 +1036,17 @@ textarea {
   .login-steps .form-control::placeholder {
     color: #999;
     font-weight: 100; }
-
 .login-steps label {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
   color: #999; }
-
 .login-steps h6 {
   font-weight: bold; }
-
 .login-steps p,
 .login-steps li {
   font-size: 14px;
   font-weight: 100;
   color: #999; }
-
 .login-steps .feedback-radios .fixed-labels-top {
   margin-top: 60px; }
   .login-steps .feedback-radios .fixed-labels-top .col {
@@ -1064,7 +1055,6 @@ textarea {
     align-items: flex-end; }
     .login-steps .feedback-radios .fixed-labels-top .col .custom-label {
       position: static; }
-
 .login-steps .feedback-radios .col {
   height: 70px;
   position: relative;
@@ -1101,18 +1091,17 @@ textarea {
       border-radius: 50%;
       display: block; }
   .login-steps .feedback-radios .col .radio-dislike .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #3EDAF7;
-    border-color: #3EDAF7; }
+    background-color: #3edaf7;
+    border-color: #3edaf7; }
   .login-steps .feedback-radios .col .radio-unsure .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #E6ED37;
-    border-color: #E6ED37; }
+    background-color: #e6ed37;
+    border-color: #e6ed37; }
   .login-steps .feedback-radios .col .radio-like .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #83F521;
-    border-color: #83F521; }
+    background-color: #83f521;
+    border-color: #83f521; }
   .login-steps .feedback-radios .col .radio-strongly-like .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #11DB57;
-    border-color: #11DB57; }
-
+    background-color: #11db57;
+    border-color: #11db57; }
 .login-steps .feedback-radios .carousel {
   height: 400px !important;
   padding-bottom: 80px;
@@ -1208,7 +1197,6 @@ textarea {
   border-top: 1px solid #d5d4e9;
   padding: 15px 0;
   margin: 45px 0 0px; }
-
 #copyright p {
   line-height: 42px;
   color: #333;
@@ -1234,18 +1222,15 @@ textarea {
   -o-transition: all 0.3s ease-in-out 0s; }
   .social-icon a:hover {
     color: #fff !important; }
-
 .social-icon .facebook:hover {
   background: #3b5999; }
-
 .social-icon .twitter:hover {
   background: #4A9CEC; }
-
 .social-icon .instagram:hover {
   background: #D6274D; }
-
 .social-icon .linkedin:hover {
   background: #1260A2; }
-
 .social-icon .google:hover {
   background: #CE332A; }
+
+/*# sourceMappingURL=main.css.map */
