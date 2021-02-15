@@ -1152,6 +1152,9 @@ textarea {
     font-weight: bold; }
   .recommend-learning .dashboard-right-side {
     margin-top: 130px; }
+    .recommend-learning .dashboard-right-side .login-steps {
+      margin-top: 70px;
+      margin-bottom: 100px; }
   .recommend-learning .dashboard-left-side {
     max-width: 100px;
     height: 100vh; }
