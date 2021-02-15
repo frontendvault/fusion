@@ -1151,13 +1151,15 @@ textarea {
     font-size: 18px;
     font-weight: bold; }
   .recommend-learning .dashboard-right-side {
-    margin-top: 130px; }
+    margin-top: 130px;
+    margin-left: 120px; }
     .recommend-learning .dashboard-right-side .login-steps {
       margin-top: 70px;
       margin-bottom: 100px; }
   .recommend-learning .dashboard-left-side {
     max-width: 100px;
-    height: 100vh; }
+    height: 100vh;
+    position: fixed; }
     .recommend-learning .dashboard-left-side ul {
       margin-top: 130px; }
       .recommend-learning .dashboard-left-side ul a {
