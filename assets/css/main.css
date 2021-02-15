@@ -1109,7 +1109,7 @@ textarea {
     background-color: #11db57;
     border-color: #11db57; }
 .login-steps .feedback-radios .carousel {
-  height: 400px !important;
+  height: 400px;
   padding-bottom: 80px;
   margin-bottom: 40px; }
   .login-steps .feedback-radios .carousel .col {
