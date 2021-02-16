@@ -80,10 +80,29 @@
       font-size: 13px;
     }
 
-    .form-control {
+    .input-group {
       box-shadow: inset 0 0 10px $light-gray;
-      font-size: 14px;
+      .input-group-prepend {
+        .btn {
+          background: transparent;
+          padding-left: 20px;
+          padding-right: 10px;
+        }
+      }
+      .form-control {
+        font-size: 14px;
+        height: 50px;
+        background: transparent;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+    .form-control {
       height: 50px;
+      &:focus {
+        box-shadow: none;
+      }
     }
   }
 }
