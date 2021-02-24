@@ -1170,6 +1170,10 @@ textarea {
     .recommend-learning .dashboard-right-side .login-steps {
       margin-top: 70px;
       margin-bottom: 100px; }
+    .recommend-learning .dashboard-right-side h2 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 22px;
+      font-weight: 600; }
   .recommend-learning .dashboard-left-side {
     max-width: 100px;
     height: 100vh;
@@ -1189,7 +1193,7 @@ textarea {
         width: 15px; }
       .recommend-learning .dashboard-left-side .nav .nav-link .fas {
         color: #ccc;
-        font-size: 20px; }
+        font-size: 24px; }
     .recommend-learning .dashboard-left-side .nav .active {
       background-color: transparent;
       border-right: 1px solid #1477fc; }
@@ -1211,6 +1215,8 @@ textarea {
 
 .career-path {
   position: relative; }
+  .career-path h2 {
+    font-family: "Open Sans", sans-serif; }
   .career-path h4 {
     font-size: 18px;
     font-weight: normal;
@@ -1257,8 +1263,8 @@ textarea {
     justify-content: center;
     right: -122px;
     top: 40px;
-    height: 46px;
-    background-color: #11db57;
+    height: 44px;
+    background-color: #7ed327;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -1269,11 +1275,20 @@ textarea {
       position: absolute;
       width: 0;
       height: 0;
-      right: -25px;
-      border-left: 22px solid #11db57;
+      right: -22px;
+      border-left: 22px solid #7ed327;
       border-top: 22px solid transparent;
       border-bottom: 22px solid transparent;
       top: 0; }
+
+.tab-pane .nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: transparent;
+  color: #333; }
+.tab-pane .nav .active {
+  background-color: transparent !important;
+  color: #1477fc !important; }
 
 /* Footer Area Start */
 .footer-area {

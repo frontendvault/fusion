@@ -1,4 +1,7 @@
 .career-path {
+  h2 {
+    font-family: "Open Sans", sans-serif;
+  }
   position: relative;
   h4 {
     font-size: 18px;
@@ -68,7 +71,7 @@
     top: 40px;
     // right: -22px;
     height: 44px;
-    background-color: $green;
+    background-color: $light-green;
     color: $white;
     text-decoration: none;
     font-weight: 600;
@@ -79,11 +82,26 @@
       position: absolute;
       width: 0;
       height: 0;
-      right: -25px;
-      border-left: 22px solid $green;
+      right: -22px;
+      border-left: 22px solid $light-green;
       border-top: 22px solid transparent;
       border-bottom: 22px solid transparent;
       top: 0;
+    }
+  }
+}
+
+.tab-pane {
+  .nav {
+    .nav-link {
+      font-size: 16px;
+      font-weight: 600;
+      background-color: transparent;
+      color: $dark;
+    }
+    .active {
+      background-color: transparent !important;
+      color: $blue !important;
     }
   }
 }

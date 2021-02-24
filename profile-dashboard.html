@@ -115,16 +115,16 @@
           </div>
         </div>
         <div class="col-9 dashboard-right-side">
+          <div class="row">
+            <div class="col"><h2>Profile Dashboard</h2></div>
+          </div>
           <div class="tab-content" id="v-pills-tabContent">
             <div
-              class="tab-pane bg-light fade show active"
+              class="tab-pane bg-light p-5 fade show active"
               id="v-pills-dashboard"
               role="tabpanel"
               aria-labelledby="v-pills-dashboard-tab"
             >
-              <div class="row">
-                <div class="col"><h2>Profile Dashboard</h2></div>
-              </div>
               <div class="row">
                 <div class="col-3">
                   <div
@@ -141,8 +141,9 @@
                       role="tab"
                       aria-controls="v-pills-careerPath"
                       aria-selected="true"
-                      >Career Path</a
                     >
+                      <span>Career Path</span>
+                    </a>
                     <a
                       class="nav-link"
                       id="v-pills-interests-tab"
@@ -151,8 +152,9 @@
                       role="tab"
                       aria-controls="v-pills-interests"
                       aria-selected="false"
-                      >Interests</a
                     >
+                      <span>Interests</span>
+                    </a>
                     <a
                       class="nav-link"
                       id="v-pills-personality-tab"
@@ -161,8 +163,9 @@
                       role="tab"
                       aria-controls="v-pills-personality"
                       aria-selected="false"
-                      >Personality</a
                     >
+                      <span>Personality</span>
+                    </a>
                   </div>
                 </div>
                 <div class="col-9">
@@ -175,7 +178,7 @@
                     >
                       <!-- Career path Starts Here-->
 
-                      <div class="col-md-8 offset-md-2 career-path">
+                      <div class="col-md-8 offset-md-1 career-path">
                         <div class="row">
                           <div class="col">
                             <h4>
@@ -471,7 +474,44 @@
                       role="tabpanel"
                       aria-labelledby="v-pills-interests-tab"
                     >
-                      Interests
+                      <div class="row">
+                        <div class="col-md-5 bg-white rounded border">
+                          <div class="profile-score">
+                            <div class="row">
+                              <div class="col">
+                                <h3>Your Interest Profile Scores</h3>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Necessitatibus nesciunt
+                                  labore nisi autem tenetur error corporis
+                                  blanditiis mollitia, fuga est aliquam vero qui
+                                  ducimus dolorum dicta quibusdam iure
+                                  consequuntur iusto.
+                                </p>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Saepe, commodi.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h5 class="text-center">IEC</h5>
+                              </div>
+                              <div class="col-6 text-right">
+                                <h6>Realistic <span> 15</span></h6>
+                              </div>
+                              <div class="col-6">
+                                <h6>Investigative <span>26</span></h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="col-md-5 bg-white rounded border job-title offset-md-5"
+                        ></div>
+                      </div>
                     </div>
                     <div
                       class="tab-pane fade"
