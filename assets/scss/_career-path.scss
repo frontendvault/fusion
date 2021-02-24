@@ -1,0 +1,89 @@
+.career-path {
+  position: relative;
+  h4 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .current-position {
+    .current-position-header {
+      background-color: $blue;
+      font-size: 18px;
+      color: $white;
+      font-weight: 600;
+      -webkit-border-top-left-radius: 4px;
+      -webkit-border-top-right-radius: 4px;
+      -moz-border-radius-topleft: 4px;
+      -moz-border-radius-topright: 4px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border: 1px;
+    }
+    .card-header {
+      h2 {
+        font-size: 16px;
+        color: $dark;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+    .card-body {
+      h5 {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .accordion {
+      .card {
+        border: 0;
+        h2 {
+          font-family: "Open Sans", sans-serif;
+        }
+        .card-body {
+          .custom-radio {
+            margin-bottom: 20px;
+            label {
+              font-size: 14px;
+              strong {
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .future-position {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -122px;
+    top: 40px;
+    // right: -22px;
+    height: 44px;
+    background-color: $green;
+    color: $white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 10px;
+    font-size: 16px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -25px;
+      border-left: 22px solid $green;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+      top: 0;
+    }
+  }
+}

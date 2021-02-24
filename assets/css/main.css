@@ -1165,7 +1165,7 @@ textarea {
     font-size: 18px;
     font-weight: bold; }
   .recommend-learning .dashboard-right-side {
-    margin-top: 130px;
+    padding-top: 130px;
     margin-left: 105px; }
     .recommend-learning .dashboard-right-side .login-steps {
       margin-top: 70px;
@@ -1173,20 +1173,28 @@ textarea {
   .recommend-learning .dashboard-left-side {
     max-width: 100px;
     height: 100vh;
-    position: fixed; }
-    .recommend-learning .dashboard-left-side ul {
-      margin-top: 130px; }
-      .recommend-learning .dashboard-left-side ul a {
-        padding: 20px;
-        display: block;
-        position: relative; }
-        .recommend-learning .dashboard-left-side ul a .badge {
-          position: absolute;
-          right: 15px;
-          top: 15px; }
-        .recommend-learning .dashboard-left-side ul a .lni {
-          font-size: 30px;
-          color: #ccc; }
+    position: fixed;
+    padding-top: 130px; }
+    .recommend-learning .dashboard-left-side .nav .nav-link {
+      padding: 20px;
+      display: block;
+      position: relative;
+      border-radius: 0;
+      border-right: 1px solid transparent; }
+      .recommend-learning .dashboard-left-side .nav .nav-link .badge {
+        position: absolute;
+        right: 15px;
+        top: 15px; }
+      .recommend-learning .dashboard-left-side .nav .nav-link img {
+        width: 15px; }
+      .recommend-learning .dashboard-left-side .nav .nav-link .fas {
+        color: #ccc;
+        font-size: 20px; }
+    .recommend-learning .dashboard-left-side .nav .active {
+      background-color: transparent;
+      border-right: 1px solid #1477fc; }
+      .recommend-learning .dashboard-left-side .nav .active .fas {
+        color: #1477fc; }
   .recommend-learning .chain-management-master p {
     color: #999; }
     .recommend-learning .chain-management-master p span {
@@ -1200,6 +1208,72 @@ textarea {
     font-weight: 600; }
   .recommend-learning .additional-info p {
     color: #999; }
+
+.career-path {
+  position: relative; }
+  .career-path h4 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px; }
+  .career-path .current-position .current-position-header {
+    background-color: #1477fc;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px; }
+  .career-path .current-position .card-header h2 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none; }
+  .career-path .current-position .card-body h5 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 20px; }
+    .career-path .current-position .card-body h5 a {
+      text-decoration: none; }
+  .career-path .current-position .accordion .card {
+    border: 0; }
+    .career-path .current-position .accordion .card h2 {
+      font-family: "Open Sans", sans-serif; }
+    .career-path .current-position .accordion .card .card-body .custom-radio {
+      margin-bottom: 20px; }
+      .career-path .current-position .accordion .card .card-body .custom-radio label {
+        font-size: 14px; }
+        .career-path .current-position .accordion .card .card-body .custom-radio label strong {
+          font-weight: 600; }
+  .career-path .future-position {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -122px;
+    top: 40px;
+    height: 46px;
+    background-color: #11db57;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 10px;
+    font-size: 16px; }
+    .career-path .future-position:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -25px;
+      border-left: 22px solid #11db57;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+      top: 0; }
 
 /* Footer Area Start */
 .footer-area {
