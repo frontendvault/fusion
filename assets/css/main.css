@@ -1157,6 +1157,40 @@ textarea {
     .login-steps .feedback-radios .carousel .carousel-indicators .active {
       background: #ccc; }
 
+.bg-light-custom {
+  background-color: #f7f7f7; }
+
+.navbar .dropdown-toggle {
+  color: #ccc;
+  display: flex;
+  align-items: center; }
+  .navbar .dropdown-toggle .user-profile {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    color: #e5e5e5;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    margin-right: 10px; }
+    .navbar .dropdown-toggle .user-profile span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 16px;
+      font-weight: 500;
+      color: #999; }
+  .navbar .dropdown-toggle .fas {
+    color: #999; }
+  .navbar .dropdown-toggle:after {
+    display: none; }
+  .navbar .dropdown-toggle:hover {
+    color: #999; }
+.navbar .dropdown-menu:before {
+  display: none; }
+
 .recommend-learning {
   font-family: "Open Sans", sans-serif;
   font-size: 12px; }
@@ -1165,40 +1199,50 @@ textarea {
     font-size: 18px;
     font-weight: bold; }
   .recommend-learning .dashboard-right-side {
-    padding-top: 130px;
-    margin-left: 105px; }
+    margin-left: 105px;
+    position: relative; }
+    .recommend-learning .dashboard-right-side header {
+      position: relative; }
+      .recommend-learning .dashboard-right-side header .dashboard-header {
+        width: 100%; }
+    .recommend-learning .dashboard-right-side .btn-group {
+      width: 100px; }
     .recommend-learning .dashboard-right-side .login-steps {
       margin-top: 70px;
       margin-bottom: 100px; }
     .recommend-learning .dashboard-right-side h2 {
       font-family: "Open Sans", sans-serif;
       font-size: 22px;
-      font-weight: 600; }
+      font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 10px; }
   .recommend-learning .dashboard-left-side {
     max-width: 100px;
     height: 100vh;
-    position: fixed;
-    padding-top: 130px; }
-    .recommend-learning .dashboard-left-side .nav .nav-link {
-      padding: 20px;
-      display: block;
-      position: relative;
-      border-radius: 0;
-      border-right: 1px solid transparent; }
-      .recommend-learning .dashboard-left-side .nav .nav-link .badge {
-        position: absolute;
-        right: 15px;
-        top: 15px; }
-      .recommend-learning .dashboard-left-side .nav .nav-link img {
-        width: 15px; }
-      .recommend-learning .dashboard-left-side .nav .nav-link .fas {
-        color: #ccc;
-        font-size: 24px; }
-    .recommend-learning .dashboard-left-side .nav .active {
-      background-color: transparent;
-      border-right: 1px solid #1477fc; }
-      .recommend-learning .dashboard-left-side .nav .active .fas {
-        color: #1477fc; }
+    position: fixed; }
+    .recommend-learning .dashboard-left-side .nav {
+      padding-top: 130px;
+      height: 100vh; }
+      .recommend-learning .dashboard-left-side .nav .nav-link {
+        padding: 20px;
+        display: block;
+        position: relative;
+        border-radius: 0;
+        border-right: 1px solid transparent; }
+        .recommend-learning .dashboard-left-side .nav .nav-link .badge {
+          position: absolute;
+          right: 27px;
+          top: 19px; }
+        .recommend-learning .dashboard-left-side .nav .nav-link img {
+          width: 15px; }
+        .recommend-learning .dashboard-left-side .nav .nav-link .fas {
+          color: #ccc;
+          font-size: 24px; }
+      .recommend-learning .dashboard-left-side .nav .active {
+        background-color: transparent;
+        border-right: 1px solid #1477fc; }
+        .recommend-learning .dashboard-left-side .nav .active .fas {
+          color: #1477fc; }
   .recommend-learning .chain-management-master p {
     color: #999; }
     .recommend-learning .chain-management-master p span {
@@ -1249,7 +1293,8 @@ textarea {
   .career-path .current-position .accordion .card {
     border: 0; }
     .career-path .current-position .accordion .card h2 {
-      font-family: "Open Sans", sans-serif; }
+      font-family: "Open Sans", sans-serif;
+      margin-top: 0; }
     .career-path .current-position .accordion .card .card-body .custom-radio {
       margin-bottom: 20px; }
       .career-path .current-position .accordion .card .card-body .custom-radio label {
@@ -1289,6 +1334,30 @@ textarea {
 .tab-pane .nav .active {
   background-color: transparent !important;
   color: #1477fc !important; }
+
+.profile-score {
+  border-radius: 4px;
+  border: 1px solid #ebedf8;
+  padding: 30px 20px;
+  background: #fff; }
+  .profile-score p {
+    font-size: 12px; }
+  .profile-score h4 {
+    font-size: 15px;
+    font-weight: 600; }
+  .profile-score h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center; }
+  .profile-score h5 {
+    color: #1477fc;
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0; }
+  .profile-score h6 {
+    font-size: 13px;
+    font-weight: 600; }
 
 /* Footer Area Start */
 .footer-area {

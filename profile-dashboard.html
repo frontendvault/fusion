@@ -33,27 +33,9 @@
     />
   </head>
   <body>
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav
-        class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar shadow-sm bg-white"
-      >
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="index.html" class="navbar-brand"
-            ><img src="assets/img/cantoo_new.png" alt=""
-          /></a>
-        </div>
-      </nav>
-      <!-- Navbar End -->
-    </header>
-    <!-- Header Area wrapper End -->
-    <!-- Login Section Starts -->
-
     <div class="container-fluid recommend-learning">
       <div class="row">
-        <div class="col-3 dashboard-left-side px-0">
+        <div class="col dashboard-left-side px-0">
           <div
             class="nav flex-column nav-pills text-center border-right"
             id="v-pills-tab"
@@ -114,19 +96,53 @@
             ></a>
           </div>
         </div>
-        <div class="col-9 dashboard-right-side">
+        <div class="col dashboard-right-side">
+          <!-- Header Area wrapper Starts -->
+          <header class="px-0">
+            <!-- Navbar Start -->
+            <div class="row">
+              <nav
+                class="navbar navbar-expand-md bg-inverse border-bottom bg-white col dashboard-header"
+              >
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a href="index.html" class="navbar-brand"
+                  ><img src="assets/img/cantoo_new.png" alt=""
+                /></a>
+                <div class="btn-group ml-auto">
+                  <button
+                    type="button"
+                    class="btn bg-transparent dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <div class="user-profile"><span>SD</span></div>
+                    <i class="fas fa-ellipsis-v fa-2x"></i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">
+                      Profile Setting
+                    </button>
+                    <button class="dropdown-item" type="button">Logout</button>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <!-- Navbar End -->
+          </header>
+          <!-- Header Area wrapper End -->
           <div class="row">
             <div class="col"><h2>Profile Dashboard</h2></div>
           </div>
           <div class="tab-content" id="v-pills-tabContent">
             <div
-              class="tab-pane bg-light p-5 fade show active"
+              class="tab-pane bg-light-custom rounded border p-5 fade show active"
               id="v-pills-dashboard"
               role="tabpanel"
               aria-labelledby="v-pills-dashboard-tab"
             >
               <div class="row">
-                <div class="col-3">
+                <div class="col-2">
                   <div
                     class="nav flex-column nav-pills"
                     id="v-pills-tab"
@@ -168,7 +184,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-9">
+                <div class="col-10">
                   <div class="tab-content" id="v-pills-tabContent">
                     <div
                       class="tab-pane fade show active"
@@ -178,7 +194,642 @@
                     >
                       <!-- Career path Starts Here-->
 
-                      <div class="col-md-8 offset-md-1 career-path">
+                      <div
+                        id="carouselExampleControls"
+                        class="carousel slide"
+                        data-ride="carousel"
+                      >
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="col-md-6 offset-md-1 career-path">
+                              <div class="row">
+                                <div class="col">
+                                  <h4>
+                                    Select skills &amp; abilities to add them to
+                                    your learning plan.
+                                  </h4>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col current-position">
+                                  <div class="card mb-3">
+                                    <div
+                                      class="card-header current-position-header"
+                                    >
+                                      Current Position
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col">
+                                          <h5>
+                                            Environmental Engineer
+                                            <a href="#">Edit</a>
+                                          </h5>
+                                          <p>
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Commodi nostrum dolores assumenda
+                                            optio voluptatum neque esse est
+                                            expedita veniam enim. Harum vitae
+                                            quas ullam et animi asperiores iste
+                                            consequuntur corrupti!
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col border-top px-0">
+                                          <div
+                                            class="accordion"
+                                            id="accordionExample"
+                                          >
+                                            <div class="card border-bottom">
+                                              <div
+                                                class="card-header bg-transparent"
+                                                id="headingOne"
+                                              >
+                                                <h2
+                                                  class="mb-0 btn btn-link btn-block text-left"
+                                                  type="button"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseOne"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseOne"
+                                                >
+                                                  Technology Skills
+                                                </h2>
+                                              </div>
+
+                                              <div
+                                                id="collapseOne"
+                                                class="collapse show"
+                                                aria-labelledby="headingOne"
+                                                data-parent="#accordionExample"
+                                              >
+                                                <div class="card-body">
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="anayticSoftware"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="anayticSoftware"
+                                                    >
+                                                      <strong
+                                                        >Analytical or Scientic
+                                                        Software</strong
+                                                      >
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Molestias,
+                                                      quibusdam!
+                                                    </label>
+                                                  </div>
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="complianceSoftware"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="complianceSoftware"
+                                                    >
+                                                      <strong
+                                                        >Compliance
+                                                        Software</strong
+                                                      >
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                    </label>
+                                                  </div>
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="computerAided"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="computerAided"
+                                                    >
+                                                      <strong
+                                                        >Computer aided Design
+                                                        CAD Software
+                                                      </strong>
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit.
+                                                    </label>
+                                                  </div>
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="imagingSoftware"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="imagingSoftware"
+                                                    >
+                                                      <strong
+                                                        >Graphics or photo
+                                                        imaging software
+                                                      </strong>
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                    </label>
+                                                  </div>
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="mapCreationSoftware"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="mapCreationSoftware"
+                                                    >
+                                                      <strong
+                                                        >Map Creation Software
+                                                      </strong>
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card border-bottom">
+                                              <div
+                                                class="card-header bg-transparent"
+                                                id="headingTwo"
+                                              >
+                                                <h2
+                                                  class="mb-0 btn btn-link btn-block text-left collapsed"
+                                                  type="button"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseTwo"
+                                                  aria-expanded="false"
+                                                  aria-controls="collapseTwo"
+                                                >
+                                                  Knowledge
+                                                </h2>
+                                              </div>
+                                              <div
+                                                id="collapseTwo"
+                                                class="collapse"
+                                                aria-labelledby="headingTwo"
+                                                data-parent="#accordionExample"
+                                              >
+                                                <div class="card-body">
+                                                  Some placeholder content for
+                                                  the second accordion panel.
+                                                  This panel is hidden by
+                                                  default.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card border-bottom">
+                                              <div
+                                                class="card-header bg-transparent"
+                                                id="headingThree"
+                                              >
+                                                <h2
+                                                  class="mb-0 btn btn-link btn-block text-left collapsed"
+                                                  type="button"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseThree"
+                                                  aria-expanded="false"
+                                                  aria-controls="collapseThree"
+                                                >
+                                                  Skills
+                                                </h2>
+                                              </div>
+                                              <div
+                                                id="collapseThree"
+                                                class="collapse"
+                                                aria-labelledby="headingThree"
+                                                data-parent="#accordionExample"
+                                              >
+                                                <div class="card-body">
+                                                  And lastly, the placeholder
+                                                  content for the third and
+                                                  final accordion panel. This
+                                                  panel is hidden by default.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card border-bottom">
+                                              <div
+                                                class="card-header bg-transparent"
+                                                id="headingThree"
+                                              >
+                                                <h2
+                                                  class="btn btn-link mb-0 btn-block text-left collapsed"
+                                                  type="button"
+                                                  data-toggle="collapse"
+                                                  data-target="#currentPositionAbility"
+                                                  aria-expanded="false"
+                                                  aria-controls="currentPositionAbility"
+                                                >
+                                                  Ability
+                                                </h2>
+                                              </div>
+                                              <div
+                                                id="currentPositionAbility"
+                                                class="collapse"
+                                                aria-labelledby="headingFour"
+                                                data-parent="#accordionExample"
+                                              >
+                                                <div class="card-body">
+                                                  And lastly, the placeholder
+                                                  content for the third and
+                                                  final accordion panel. This
+                                                  panel is hidden by default.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="" class="future-position"
+                                >Future Position</a
+                              >
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="col-md-6 offset-md-1 career-path">
+                              <div class="row">
+                                <div class="col">
+                                  <h4>
+                                    Select skills 2 &amp; abilities to add them
+                                    to your learning plan.
+                                  </h4>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col current-position">
+                                  <div class="card mb-3">
+                                    <div
+                                      class="card-header current-position-header"
+                                    >
+                                      Current Position
+                                    </div>
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col">
+                                          <h5>
+                                            Environmental Engineer
+                                            <a href="#">Edit</a>
+                                          </h5>
+                                          <p>
+                                            Lorem ipsum dolor sit, amet
+                                            consectetur adipisicing elit.
+                                            Commodi nostrum dolores assumenda
+                                            optio voluptatum neque esse est
+                                            expedita veniam enim. Harum vitae
+                                            quas ullam et animi asperiores iste
+                                            consequuntur corrupti!
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col border-top px-0">
+                                          <div
+                                            class="accordion"
+                                            id="accordionExample"
+                                          >
+                                            <div class="card border-bottom">
+                                              <div
+                                                class="card-header bg-transparent"
+                                                id="headingOne"
+                                              >
+                                                <h2
+                                                  class="mb-0 btn btn-link btn-block text-left"
+                                                  type="button"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseOne"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseOne"
+                                                >
+                                                  Technology Skills
+                                                </h2>
+                                              </div>
+
+                                              <div
+                                                id="collapseOne"
+                                                class="collapse show"
+                                                aria-labelledby="headingOne"
+                                                data-parent="#accordionExample"
+                                              >
+                                                <div class="card-body">
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="anayticSoftware"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="anayticSoftware"
+                                                    >
+                                                      <strong
+                                                        >Analytical or Scientic
+                                                        Software</strong
+                                                      >
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Molestias,
+                                                      quibusdam!
+                                                    </label>
+                                                  </div>
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="complianceSoftware"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="complianceSoftware"
+                                                    >
+                                                      <strong
+                                                        >Compliance
+                                                        Software</strong
+                                                      >
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                    </label>
+                                                  </div>
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="computerAided"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="computerAided"
+                                                    >
+                                                      <strong
+                                                        >Computer aided Design
+                                                        CAD Software
+                                                      </strong>
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit.
+                                                    </label>
+                                                  </div>
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="imagingSoftware"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="imagingSoftware"
+                                                    >
+                                                      <strong
+                                                        >Graphics or photo
+                                                        imaging software
+                                                      </strong>
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                    </label>
+                                                  </div>
+                                                  <div
+                                                    class="custom-control custom-radio"
+                                                  >
+                                                    <input
+                                                      type="radio"
+                                                      id="mapCreationSoftware"
+                                                      name="customRadio"
+                                                      class="custom-control-input"
+                                                    />
+                                                    <label
+                                                      class="custom-control-label"
+                                                      for="mapCreationSoftware"
+                                                    >
+                                                      <strong
+                                                        >Map Creation Software
+                                                      </strong>
+                                                      <div class="w-100"></div>
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                      Lorem ipsum dolor sit amet
+                                                      consectetur adipisicing
+                                                      elit. Esse eum veritatis
+                                                      iure vel totam omnis.
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card border-bottom">
+                                              <div
+                                                class="card-header bg-transparent"
+                                                id="headingTwo"
+                                              >
+                                                <h2
+                                                  class="mb-0 btn btn-link btn-block text-left collapsed"
+                                                  type="button"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseTwo"
+                                                  aria-expanded="false"
+                                                  aria-controls="collapseTwo"
+                                                >
+                                                  Knowledge
+                                                </h2>
+                                              </div>
+                                              <div
+                                                id="collapseTwo"
+                                                class="collapse"
+                                                aria-labelledby="headingTwo"
+                                                data-parent="#accordionExample"
+                                              >
+                                                <div class="card-body">
+                                                  Some placeholder content for
+                                                  the second accordion panel.
+                                                  This panel is hidden by
+                                                  default.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card border-bottom">
+                                              <div
+                                                class="card-header bg-transparent"
+                                                id="headingThree"
+                                              >
+                                                <h2
+                                                  class="mb-0 btn btn-link btn-block text-left collapsed"
+                                                  type="button"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseThree"
+                                                  aria-expanded="false"
+                                                  aria-controls="collapseThree"
+                                                >
+                                                  Skills
+                                                </h2>
+                                              </div>
+                                              <div
+                                                id="collapseThree"
+                                                class="collapse"
+                                                aria-labelledby="headingThree"
+                                                data-parent="#accordionExample"
+                                              >
+                                                <div class="card-body">
+                                                  And lastly, the placeholder
+                                                  content for the third and
+                                                  final accordion panel. This
+                                                  panel is hidden by default.
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card border-bottom">
+                                              <div
+                                                class="card-header bg-transparent"
+                                                id="headingThree"
+                                              >
+                                                <h2
+                                                  class="btn btn-link mb-0 btn-block text-left collapsed"
+                                                  type="button"
+                                                  data-toggle="collapse"
+                                                  data-target="#currentPositionAbility"
+                                                  aria-expanded="false"
+                                                  aria-controls="currentPositionAbility"
+                                                >
+                                                  Ability
+                                                </h2>
+                                              </div>
+                                              <div
+                                                id="currentPositionAbility"
+                                                class="collapse"
+                                                aria-labelledby="headingFour"
+                                                data-parent="#accordionExample"
+                                              >
+                                                <div class="card-body">
+                                                  And lastly, the placeholder
+                                                  content for the third and
+                                                  final accordion panel. This
+                                                  panel is hidden by default.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a href="" class="future-position"
+                                >Future Position</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <a
+                          class="carousel-control-prev"
+                          href="#carouselExampleControls"
+                          role="button"
+                          data-slide="prev"
+                        >
+                          <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a
+                          class="carousel-control-next"
+                          href="#carouselExampleControls"
+                          role="button"
+                          data-slide="next"
+                        >
+                          <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+
+                      <!-- <div class="col-md-6 offset-md-1 career-path">
                         <div class="row">
                           <div class="col">
                             <h4>
@@ -465,7 +1116,7 @@
                           </div>
                         </div>
                         <a href="" class="future-position">Future Position</a>
-                      </div>
+                      </div> -->
                     </div>
 
                     <div
@@ -475,10 +1126,10 @@
                       aria-labelledby="v-pills-interests-tab"
                     >
                       <div class="row">
-                        <div class="col-md-5 bg-white rounded border">
+                        <div class="col-md-5 p-0">
                           <div class="profile-score">
                             <div class="row">
-                              <div class="col">
+                              <div class="col text-center">
                                 <h3>Your Interest Profile Scores</h3>
                                 <p>
                                   Lorem ipsum dolor sit amet, consectetur
@@ -502,15 +1153,168 @@
                                 <h6>Realistic <span> 15</span></h6>
                               </div>
                               <div class="col-6">
-                                <h6>Investigative <span>26</span></h6>
+                                <div class="progress">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 15%"
+                                    aria-valuenow="15"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="col-6 text-right">
+                                <h6 class="font-weight-bold">
+                                  Investigative <span>26</span>
+                                </h6>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="progress">
+                                  <div
+                                    class="progress-bar bg-success"
+                                    role="progressbar"
+                                    style="width: 26%"
+                                    aria-valuenow="26"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="col-6 text-right">
+                                <h6>Artistic <span>16</span></h6>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="progress">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 16%"
+                                    aria-valuenow="16"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="col-6 text-right">
+                                <h6>Social <span>39</span></h6>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="progress">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 39%"
+                                    aria-valuenow="39"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="col-6 text-right">
+                                <h6 class="font-weight-bold">
+                                  Enterprising <span>26</span>
+                                </h6>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="progress">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 25%"
+                                    aria-valuenow="25"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div class="col-6 text-right">
+                                <h6 class="font-weight-bold">
+                                  Conventional <span>16</span>
+                                </h6>
+                              </div>
+                              <div class="col-6">
+                                <div class="progress">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 50%"
+                                    aria-valuenow="50"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col border-top pt-4 mt-3">
+                                <h4>Investigative</h4>
+                                <p>
+                                  People with Investigative interests like work
+                                  that has to do with ideas and thinking rather
+                                  than physical activity or leading people.
+                                </p>
+
+                                <p>
+                                  <strong class="mt-3 d-block"
+                                    >They Like:</strong
+                                  >
+                                </p>
+
+                                <ul>
+                                  <li>Searching for facts</li>
+                                  <li>Figuring out problems</li>
+                                </ul>
                               </div>
                             </div>
                           </div>
                         </div>
 
-                        <div
-                          class="col-md-5 bg-white rounded border job-title offset-md-5"
-                        ></div>
+                        <div class="col-md-5 p-0 offset-md-1">
+                          <div class="profile-score h-100">
+                            <div class="row">
+                              <div class="col">
+                                <h3>Interests For Your Job Title</h3>
+                                <h4 class="font-weight-normal text-center">
+                                  Environmental Engineer
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col border-top pt-3 mt-3">
+                                <h5>IRC</h5>
+
+                                <h4>Investigative</h4>
+                                <p>
+                                  Investigative occupations frequently involve
+                                  working with ideas, and require an extensive
+                                  amount of thinking. These occupations can
+                                  involve searching for facts and figuring out
+                                  problems mentally.
+                                </p>
+                                <h4>Realistic</h4>
+                                <p>
+                                  Realistic occupations frequently involve work
+                                  activities that include practical, hands-on
+                                  problems and solutions. They often deal with
+                                  plants, animals, and real-world materials like
+                                  wood, tools, and machinery. Many of the
+                                  occupations require working outside, and do
+                                  not involve a lot of paperwork or working
+                                  closely with others.
+                                </p>
+                                <h4>Conventional</h4>
+                                <p>
+                                  Conventional occupations frequently involve
+                                  following set procedures and routines. These
+                                  occupations can include working with data and
+                                  details more than with ideas. Usually there is
+                                  a clear line of authority to follow.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div
@@ -519,7 +1323,147 @@
                       role="tabpanel"
                       aria-labelledby="v-pills-personality-tab"
                     >
-                      Personalitty
+                      <div class="row">
+                        <div class="col-md-5 p-0">
+                          <div class="profile-score">
+                            <div class="row">
+                              <div class="col text-center">
+                                <h3>Your Presonality Profile</h3>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Necessitatibus nesciunt
+                                  labore nisi autem tenetur error corporis
+                                  blanditiis mollitia, fuga est aliquam vero qui
+                                  ducimus dolorum dicta quibusdam iure
+                                  consequuntur iusto.
+                                </p>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Saepe, commodi.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <h5 class="text-center">INTP</h5>
+
+                                <p>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Qui dolorum veniam dolore
+                                  suscipit iste ex sit, asperiores similique
+                                  nulla blanditiis, voluptas quaerat tempore
+                                  quod consequatur odio, nobis maxime hic. Sunt.
+                                </p>
+                                <p>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Libero labore quas
+                                  distinctio vel eligendi ex eum aliquam iste
+                                  mollitia dolorum totam laborum ea autem, rem
+                                  et excepturi? Eum quaerat, voluptate est iusto
+                                  aliquid voluptates natus architecto sequi
+                                  accusantium asperiores optio!
+                                </p>
+                                <p>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Corrupti sequi iste
+                                  explicabo exercitationem sit eveniet?
+                                </p>
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Ducimus officiis at
+                                  perferendis minima quibusdam natus tenetur
+                                  illo laboriosam consequuntur quidem.
+                                </p>
+                                <p>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Libero labore quas
+                                  distinctio vel eligendi ex eum aliquam iste
+                                  mollitia dolorum totam laborum ea autem, rem
+                                  et excepturi? Eum quaerat, voluptate est iusto
+                                  aliquid voluptates natus architecto sequi
+                                  accusantium asperiores optio!
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-5 p-0 offset-md-1">
+                          <div class="profile-score h-100">
+                            <div class="row">
+                              <div class="col">
+                                <h3>Common Personality For Your Job Title</h3>
+                                <h4 class="font-weight-normal text-center">
+                                  Environmental Engineer
+                                </h4>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12 border-top pt-3 mt-3">
+                                <h5>INTJ</h5>
+
+                                <p>
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Nesciunt odit maiores nobis
+                                  quaerat voluptate facere quibusdam est id!
+                                </p>
+                                <div class="row">
+                                  <div class="col-md-6 px-md-5">
+                                    <ul>
+                                      <li>Integrity</li>
+                                      <li>Attention to Detail</li>
+                                      <li>Analytical Thinking</li>
+                                    </ul>
+                                  </div>
+                                  <div class="col-md-6 px-md-5">
+                                    <ul>
+                                      <li>Cooperation</li>
+                                      <li>Dependability</li>
+                                      <li>Achievement/Effort</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <h4 class="font-weight-normal text-center">
+                                      I - Introversion
+                                    </h4>
+                                    <p>
+                                      People who prefer Introversion tend to
+                                      direct their energy toward their inner
+                                      world and get energized by reflecting on
+                                      their ideas and experiences.
+                                    </p>
+
+                                    <h4>N - Intuition</h4>
+                                    <p>
+                                      People who prefer Intuition tend to take
+                                      in information by seeing the big picture.
+                                      They focus mainly on the patterns and
+                                      interrelationships they perceive.
+                                    </p>
+                                    <h4>T - Thinking</h4>
+                                    <p>
+                                      People who prefer Thinking typically base
+                                      their decisions and conclusions on logic,
+                                      with accuracy and objective truth the
+                                      primary goals.
+                                    </p>
+
+                                    <h4>J - Judging</h4>
+                                    <p>
+                                      People who prefer Thinking typically base
+                                      their decisions and conclusions on logic,
+                                      with accuracy and objective truth the
+                                      primary goals.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

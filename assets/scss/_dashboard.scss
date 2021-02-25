@@ -1,3 +1,47 @@
+.bg-light-custom {
+  background-color: $gray-bg;
+}
+.navbar {
+  .dropdown-toggle {
+    color: $gray;
+    .user-profile {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      border: 1px solid $medium-gray;
+      color: $light-gray;
+      text-align: center;
+      line-height: 30px;
+      position: relative;
+      margin-right: 10px;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        color: $medium-gray;
+      }
+    }
+    .fas {
+      color: $medium-gray;
+    }
+    display: flex;
+    align-items: center;
+    &:after {
+      display: none;
+    }
+    &:hover {
+      color: $medium-gray;
+    }
+  }
+  .dropdown-menu {
+    &:before {
+      display: none;
+    }
+  }
+}
 .recommend-learning {
   font-family: "Open Sans", sans-serif;
 
@@ -8,8 +52,21 @@
     font-weight: bold;
   }
   .dashboard-right-side {
-    padding-top: 130px;
     margin-left: 105px;
+    position: relative;
+    .dashboard-dropdown {
+    }
+    header {
+      position: relative;
+      .dashboard-header {
+        width: 100%;
+      }
+      .navbar {
+      }
+    }
+    .btn-group {
+      width: 100px;
+    }
     .login-steps {
       margin-top: 70px;
       margin-bottom: 100px;
@@ -18,15 +75,18 @@
       font-family: "Open Sans", sans-serif;
       font-size: 22px;
       font-weight: 600;
+      margin-top: 30px;
+      margin-bottom: 10px;
     }
   }
   .dashboard-left-side {
     max-width: 100px;
     height: 100vh;
     position: fixed;
-    padding-top: 130px;
 
     .nav {
+      padding-top: 130px;
+      height: 100vh;
       .nav-link {
         padding: 20px;
         display: block;
@@ -35,8 +95,8 @@
         border-right: 1px solid transparent;
         .badge {
           position: absolute;
-          right: 15px;
-          top: 15px;
+          right: 27px;
+          top: 19px;
         }
         img {
           width: 15px;
@@ -78,5 +138,7 @@
     p {
       color: $medium-gray;
     }
+  }
+  .tab-pane {
   }
 }
