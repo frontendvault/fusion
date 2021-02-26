@@ -8,6 +8,7 @@
     font-weight: normal;
     text-align: center;
     margin-bottom: 20px;
+    color: $medium-gray;
   }
   .current-position {
     .current-position-header {
@@ -29,6 +30,10 @@
         color: $dark;
         font-weight: 600;
         text-decoration: none;
+        a {
+          font-size: 12px;
+          margin-left: 30px;
+        }
       }
     }
     .card-body {
@@ -41,8 +46,21 @@
           text-decoration: none;
         }
       }
+      .future-position-form {
+        label {
+          color: gray;
+        }
+        select.form-control {
+          font-size: 13px;
+          color: $gray;
+          height: 40px;
+        }
+      }
     }
     .accordion {
+      p {
+        margin-bottom: 0;
+      }
       .card {
         border: 0;
         .card-header {
@@ -75,21 +93,23 @@
         }
 
         .card-body {
+          font-size: 13px;
+          line-height: 17px;
           .custom-radio {
             margin-bottom: 20px;
             label {
-              font-size: 14px;
+              font-size: 13px;
               strong {
                 font-weight: 600;
               }
             }
           }
-          select.form-control {
-            font-size: 12px;
-          }
         }
       }
     }
+  }
+  .carousel-control-prev-icon {
+    background-image: none;
   }
   .future-position {
     .current-position-header {
@@ -116,36 +136,63 @@
     }
   }
   .current-position-badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -109px;
+    top: 45px;
+    height: 44px;
+    background-color: $blue;
+    color: $white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 10px;
+    font-size: 13px;
+    opacity: 1;
+
+    width: 125px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -22px;
+      border-right: 22px solid $blue;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+      top: 0;
+    }
   }
   .future-position-badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -100px;
+    top: 45px;
+    // right: -22px;
+    height: 44px;
+    color: $white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 10px;
+    font-size: 13px;
+    background-color: $light-green;
+    width: 116px;
+    opacity: 1;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -22px;
+      border-left: 22px solid $light-green;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+      top: 0;
+    }
   }
-  // .future-position {
-  //   position: absolute;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   right: -122px;
-  //   top: 40px;
-  //   // right: -22px;
-  //   height: 44px;
-  //   background-color: $light-green;
-  //   color: $white;
-  //   text-decoration: none;
-  //   font-weight: 600;
-  //   padding: 10px 10px;
-  //   font-size: 16px;
-  //   &:after {
-  //     content: "";
-  //     position: absolute;
-  //     width: 0;
-  //     height: 0;
-  //     right: -22px;
-  //     border-left: 22px solid $light-green;
-  //     border-top: 22px solid transparent;
-  //     border-bottom: 22px solid transparent;
-  //     top: 0;
-  //   }
-  // }
 }
 
 .tab-pane {
@@ -159,6 +206,9 @@
     .active {
       background-color: transparent !important;
       color: $blue !important;
+      span {
+        text-decoration: underline;
+      }
     }
   }
 }

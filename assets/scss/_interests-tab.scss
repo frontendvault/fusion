@@ -1,5 +1,10 @@
 .profile-score {
   border-radius: 4px;
+  ul {
+    li {
+      list-style-type: disc;
+    }
+  }
   border: 1px solid $fade-gray;
   padding: 30px 20px;
   background: $white;
@@ -25,5 +30,9 @@
   h6 {
     font-size: 13px;
     font-weight: 600;
+  }
+  .progress {
+    height: 10px;
+    margin-top: 3px;
   }
 }

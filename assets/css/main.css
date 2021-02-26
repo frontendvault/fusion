@@ -1158,7 +1158,11 @@ textarea {
       background: #ccc; }
 
 .bg-light-custom {
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #ebedf8;
+  padding-top: 40px; }
 
 .navbar .dropdown-toggle {
   color: #ccc;
@@ -1194,7 +1198,8 @@ textarea {
 .recommend-learning {
   font-family: "Open Sans", sans-serif; }
   .recommend-learning p {
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 17px; }
   .recommend-learning h4 {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -1216,7 +1221,7 @@ textarea {
       font-size: 22px;
       font-weight: 600;
       margin-top: 30px;
-      margin-bottom: 10px; }
+      margin-bottom: 15px; }
   .recommend-learning .dashboard-left-side {
     max-width: 100px;
     height: 100vh;
@@ -1266,7 +1271,8 @@ textarea {
     font-size: 18px;
     font-weight: normal;
     text-align: center;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    color: #999; }
   .career-path .current-position .current-position-header {
     background-color: #1477fc;
     font-size: 18px;
@@ -1284,6 +1290,9 @@ textarea {
     color: #333;
     font-weight: 600;
     text-decoration: none; }
+    .career-path .current-position .card-header h2 a {
+      font-size: 12px;
+      margin-left: 30px; }
   .career-path .current-position .card-body h5 {
     font-weight: 600;
     font-size: 16px;
@@ -1291,6 +1300,14 @@ textarea {
     margin-top: 20px; }
     .career-path .current-position .card-body h5 a {
       text-decoration: none; }
+  .career-path .current-position .card-body .future-position-form label {
+    color: gray; }
+  .career-path .current-position .card-body .future-position-form select.form-control {
+    font-size: 13px;
+    color: #ccc;
+    height: 40px; }
+  .career-path .current-position .accordion p {
+    margin-bottom: 0; }
   .career-path .current-position .accordion .card {
     border: 0; }
     .career-path .current-position .accordion .card .card-header {
@@ -1313,14 +1330,17 @@ textarea {
       .career-path .current-position .accordion .card .card-header .collapsed:after {
         content: "+";
         font-size: 16px; }
-    .career-path .current-position .accordion .card .card-body .custom-radio {
-      margin-bottom: 20px; }
-      .career-path .current-position .accordion .card .card-body .custom-radio label {
-        font-size: 14px; }
-        .career-path .current-position .accordion .card .card-body .custom-radio label strong {
-          font-weight: 600; }
-    .career-path .current-position .accordion .card .card-body select.form-control {
-      font-size: 12px; }
+    .career-path .current-position .accordion .card .card-body {
+      font-size: 13px;
+      line-height: 17px; }
+      .career-path .current-position .accordion .card .card-body .custom-radio {
+        margin-bottom: 20px; }
+        .career-path .current-position .accordion .card .card-body .custom-radio label {
+          font-size: 13px; }
+          .career-path .current-position .accordion .card .card-body .custom-radio label strong {
+            font-weight: 600; }
+  .career-path .carousel-control-prev-icon {
+    background-image: none; }
   .career-path .future-position .current-position-header {
     background-color: #7ed327; }
   .career-path .future-position .btn-add {
@@ -1339,6 +1359,58 @@ textarea {
   .career-path .future-position label {
     font-size: 13px;
     font-weight: 100; }
+  .career-path .current-position-badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -109px;
+    top: 45px;
+    height: 44px;
+    background-color: #1477fc;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 10px;
+    font-size: 13px;
+    opacity: 1;
+    width: 125px; }
+    .career-path .current-position-badge:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -22px;
+      border-right: 22px solid #1477fc;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+      top: 0; }
+  .career-path .future-position-badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -100px;
+    top: 45px;
+    height: 44px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 10px;
+    font-size: 13px;
+    background-color: #7ed327;
+    width: 116px;
+    opacity: 1; }
+    .career-path .future-position-badge:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -22px;
+      border-left: 22px solid #7ed327;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+      top: 0; }
 
 .tab-pane .nav .nav-link {
   font-size: 16px;
@@ -1348,12 +1420,16 @@ textarea {
 .tab-pane .nav .active {
   background-color: transparent !important;
   color: #1477fc !important; }
+  .tab-pane .nav .active span {
+    text-decoration: underline; }
 
 .profile-score {
   border-radius: 4px;
   border: 1px solid #ebedf8;
   padding: 30px 20px;
   background: #fff; }
+  .profile-score ul li {
+    list-style-type: disc; }
   .profile-score p {
     font-size: 12px; }
   .profile-score h4 {
@@ -1372,6 +1448,9 @@ textarea {
   .profile-score h6 {
     font-size: 13px;
     font-weight: 600; }
+  .profile-score .progress {
+    height: 10px;
+    margin-top: 3px; }
 
 /* Footer Area Start */
 .footer-area {
