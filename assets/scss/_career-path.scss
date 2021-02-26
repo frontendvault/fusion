@@ -45,10 +45,35 @@
     .accordion {
       .card {
         border: 0;
-        h2 {
-          font-family: "Open Sans", sans-serif;
-          margin-top: 0;
+        .card-header {
+          padding: 0;
+          h2 {
+            padding: 14px 20px;
+            font-family: "Open Sans", sans-serif;
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+
+            &:after {
+              content: "-";
+              right: 20px;
+              font-size: 20px;
+              // font-family: "Font Awesome 5 Free";
+              height: 20px;
+              width: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .collapsed {
+            &:after {
+              content: "+";
+              font-size: 16px;
+            }
+          }
         }
+
         .card-body {
           .custom-radio {
             margin-bottom: 20px;
@@ -59,37 +84,68 @@
               }
             }
           }
+          select.form-control {
+            font-size: 12px;
+          }
         }
       }
     }
   }
   .future-position {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: -122px;
-    top: 40px;
-    // right: -22px;
-    height: 44px;
-    background-color: $light-green;
-    color: $white;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px 10px;
-    font-size: 16px;
-    &:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      right: -22px;
-      border-left: 22px solid $light-green;
-      border-top: 22px solid transparent;
-      border-bottom: 22px solid transparent;
-      top: 0;
+    .current-position-header {
+      background-color: $light-green;
+    }
+    .btn-add {
+      background-color: transparent;
+      border: 1px solid $light-green;
+      margin-bottom: 10px;
+      color: $light-green;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 5px 20px;
+      font-size: 14px;
+      &:hover {
+        background-color: $light-green;
+        border: 1px solid $light-green;
+        color: $white;
+      }
+    }
+    label {
+      font-size: 13px;
+      font-weight: 100;
     }
   }
+  .current-position-badge {
+  }
+  .future-position-badge {
+  }
+  // .future-position {
+  //   position: absolute;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   right: -122px;
+  //   top: 40px;
+  //   // right: -22px;
+  //   height: 44px;
+  //   background-color: $light-green;
+  //   color: $white;
+  //   text-decoration: none;
+  //   font-weight: 600;
+  //   padding: 10px 10px;
+  //   font-size: 16px;
+  //   &:after {
+  //     content: "";
+  //     position: absolute;
+  //     width: 0;
+  //     height: 0;
+  //     right: -22px;
+  //     border-left: 22px solid $light-green;
+  //     border-top: 22px solid transparent;
+  //     border-bottom: 22px solid transparent;
+  //     top: 0;
+  //   }
+  // }
 }
 
 .tab-pane {

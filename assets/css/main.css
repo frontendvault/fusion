@@ -1192,8 +1192,9 @@ textarea {
   display: none; }
 
 .recommend-learning {
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px; }
+  font-family: "Open Sans", sans-serif; }
+  .recommend-learning p {
+    font-size: 13px; }
   .recommend-learning h4 {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -1292,39 +1293,52 @@ textarea {
       text-decoration: none; }
   .career-path .current-position .accordion .card {
     border: 0; }
-    .career-path .current-position .accordion .card h2 {
-      font-family: "Open Sans", sans-serif;
-      margin-top: 0; }
+    .career-path .current-position .accordion .card .card-header {
+      padding: 0; }
+      .career-path .current-position .accordion .card .card-header h2 {
+        padding: 14px 20px;
+        font-family: "Open Sans", sans-serif;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between; }
+        .career-path .current-position .accordion .card .card-header h2:after {
+          content: "-";
+          right: 20px;
+          font-size: 20px;
+          height: 20px;
+          width: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+      .career-path .current-position .accordion .card .card-header .collapsed:after {
+        content: "+";
+        font-size: 16px; }
     .career-path .current-position .accordion .card .card-body .custom-radio {
       margin-bottom: 20px; }
       .career-path .current-position .accordion .card .card-body .custom-radio label {
         font-size: 14px; }
         .career-path .current-position .accordion .card .card-body .custom-radio label strong {
           font-weight: 600; }
-  .career-path .future-position {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: -122px;
-    top: 40px;
-    height: 44px;
-    background-color: #7ed327;
-    color: #fff;
-    text-decoration: none;
+    .career-path .current-position .accordion .card .card-body select.form-control {
+      font-size: 12px; }
+  .career-path .future-position .current-position-header {
+    background-color: #7ed327; }
+  .career-path .future-position .btn-add {
+    background-color: transparent;
+    border: 1px solid #7ed327;
+    margin-bottom: 10px;
+    color: #7ed327;
     font-weight: 600;
-    padding: 10px 10px;
-    font-size: 16px; }
-    .career-path .future-position:after {
-      content: "";
-      position: absolute;
-      width: 0;
-      height: 0;
-      right: -22px;
-      border-left: 22px solid #7ed327;
-      border-top: 22px solid transparent;
-      border-bottom: 22px solid transparent;
-      top: 0; }
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-size: 14px; }
+    .career-path .future-position .btn-add:hover {
+      background-color: #7ed327;
+      border: 1px solid #7ed327;
+      color: #fff; }
+  .career-path .future-position label {
+    font-size: 13px;
+    font-weight: 100; }
 
 .tab-pane .nav .nav-link {
   font-size: 16px;
