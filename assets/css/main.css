@@ -1452,6 +1452,22 @@ textarea {
     height: 10px;
     margin-top: 3px; }
 
+.my-learning .table {
+  font-size: 13px; }
+  .my-learning .table .current td {
+    color: #ef082b; }
+  .my-learning .table .future td {
+    color: #11db57; }
+  .my-learning .table td {
+    color: #707070;
+    border-top: 1px solid #e5e5e5; }
+  .my-learning .table a .fas {
+    color: #e5e5e5;
+    font-size: 20px; }
+  .my-learning .table th {
+    font-size: 12px;
+    font-weight: 100; }
+
 /* Footer Area Start */
 .footer-area {
   position: relative;

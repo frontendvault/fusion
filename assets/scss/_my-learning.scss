@@ -1,0 +1,30 @@
+.my-learning {
+  .table {
+    font-size: 13px;
+
+    .current {
+      td {
+        color: $red;
+      }
+    }
+    .future {
+      td {
+        color: $green;
+      }
+    }
+    td {
+      color: $gray70;
+      border-top: 1px solid $light-gray;
+    }
+    a {
+      .fas {
+        color: $light-gray;
+        font-size: 20px;
+      }
+    }
+    th {
+      font-size: 12px;
+      font-weight: 100;
+    }
+  }
+}
