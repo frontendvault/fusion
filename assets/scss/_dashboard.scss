@@ -74,6 +74,12 @@
     }
     .btn-group {
       width: 100px;
+      .btn {
+        &:focus {
+          border: none;
+          box-shadow: none;
+        }
+      }
     }
     .login-steps {
       margin-top: 70px;
